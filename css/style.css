@@ -1,0 +1,109 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+/* body { background: #0f2439;} */
+@font-face {
+    font-family: 'CSNPWDT NFI';
+    src: url(../font/csnpwdt\ NFI.otf) format("otf");
+    src: url(../font/csnpwdt\ NFI.ttf) format("truetype");
+}
+
+#moon {
+    /* text-align: center; */
+    margin-top: 100px;
+    margin-left: 350px;
+    position: relative;
+    /* outline: 1px solid red; */
+    overflow: hidden;
+}
+#left img {
+    display: block;
+    margin-left: 400px;
+    /* outline: 1px solid red; */
+    position: relative;
+    bottom: 350px; right: 230px;
+
+}
+#left .lb {
+    margin-top: 30px;
+    position: relative;
+    right: 130px;
+}
+#right img {
+    display: block;
+    /* outline: 1px solid red; */
+    position: relative;
+    bottom: 600px; left: 610px;
+}
+#right .rr {
+    margin-left: 130px;
+    position: relative;
+    left: 630px; bottom: 660px;
+}
+#right .rb {
+    position: relative;
+    bottom: 650px; left: 700px;
+}
+#bottom img {
+    position: relative;
+    /* outline: 1px solid red; */
+    bottom: 660px; left: 100px;
+}
+#container {
+    background: #0f2439;
+    /* width: 700px; height: 500px;     */
+    overflow: hidden;
+    margin: 0 auto;
+}
+#title {
+    color: #f7b822;
+    font-size: 100px;
+    position: relative;
+    bottom: 900px; left: 360px;
+    font-family: 'CSNPWDT NFI';
+
+ /* 애니메이션 효과 */
+ animation: title 5s linear  normal;
+
+}
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#witch img {
+    position: relative;
+    bottom: 1160px;
+
+    animation: witch 4s infinite ;
+}
+@keyframes witch {
+    0% {
+       left: 0; bottom: 1160px;
+       opacity: 1; 
+    }
+    25% {
+        left: 700px; bottom: 1500px;
+        opacity: 0;
+    }   
+    50% {
+        left: 900px; bottom: 1160px;
+        opacity: 1;
+        transform: rotateY(150deg);
+    }
+    100% {
+        left: 0; bottom: 1500px;
+        transform: rotateY(150deg);
+        opacity: 0;
+    }
+}
